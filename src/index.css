@@ -1,0 +1,207 @@
+body,
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* font-size: 16px; */
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0;
+}
+
+a,
+.header {
+  display: flex;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex: 1 0 80%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.title h1 {
+  margin-top: 20px;
+  margin: 0;
+}
+
+.title p {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#menu {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: none;
+  overflow: visible;
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 15%;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+#text-title {
+  font-size: 25px;
+}
+
+/* Sidebar*/
+
+.notes-sidebar {
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid lightgray;
+  margin: 0;
+}
+
+.notes-menu {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 25px; */
+  border-bottom: solid 1px lightgray;
+  margin: 0;
+}
+
+.notes-menu h1 {
+  margin: 0;
+  padding-left: 4%;
+}
+
+.notes-lists {
+  overflow-y: scroll;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* padding-left: 5px; */
+}
+
+.note-list {
+  cursor: pointer;
+  margin: 0;
+}
+
+.note-edit {
+  border-bottom: 1px solid #ccc;
+}
+
+.notes-list:hover {
+  background: lightgray;
+}
+
+.notes-list.active {
+  background: rgb(190, 230, 244);
+}
+
+.notes-title {
+  display: flex;
+  flex-direction: column;
+  padding: 4% 2%;
+}
+
+/* Note-Main */
+.no-notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 30px;
+  color: lightgray;
+}
+
+.main-nav {
+  flex: 1;
+}
+
+/* Editing */
+.title-date {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 2%;
+}
+
+.with-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.buttons button {
+  font-size: 20px;
+  flex: 1;
+}
+
+.header-header {
+  border-bottom: 1px solid lightgray;
+}
+
+.quill-container {
+  height: 100%;
+}
+
+.quill-editor {
+  height: 100%;
+}
+
+#note-title {
+  font-size: 20px;
+}
+
+#date-style {
+  font-size: small;
+  padding-bottom: 3%;
+}
+
+#toolbar .ql-toolbar.ql-snow {
+  display: none;
+  /* border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 8px; */
+}
